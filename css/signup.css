@@ -1,0 +1,126 @@
+
+.signupdiv {
+  min-width:300px;
+  max-width:500px;
+	width: 50%;
+	height: 100%;
+	box-shadow: rgba(255,255,255,0.2);
+	background-color: rgba(255, 250, 250,0);
+	text-align: left;
+
+  -webkit-animation: fadeinx 0.3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.3s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.3s; /* Internet Explorer */
+         -o-animation: fadeinx 0.3s; /* Opera < 12.1 */
+            animation: fadeinx 0.3s;
+}
+
+
+
+[type="radio"] {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  height: 1px; margin: -1px; 
+  overflow: hidden; 
+  padding: 0; 
+  position: absolute; 
+  width: 1px;
+  
+}
+
+label {
+  display: block;
+  cursor: pointer;
+  margin-left: 10px;
+  line-height: 0.5;
+  font-size: 1.5em;
+  font: normal medium/normal Arial, Helvetica, sans-serif;
+}
+
+
+
+[type="radio"] + span {
+  display: block;
+}
+
+/* the basic, unchecked style */
+[type="radio"] + span:before {
+  content: '';
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 2em;
+  border: 0.15em solid #fff;
+  box-shadow: 0 0 0 0.10em #000;
+  margin-right: 0.75em;
+  transition: 0.3s ease all;
+}
+
+[type="radio"]:checked + span:before {
+  background: rgb(222, 27, 27);
+  box-shadow: 0 0 0 0.15em #000;
+}
+
+[type="radio"]:hover + span:before {
+  background: rgba(222, 27, 27, 0.8);
+  box-shadow: 0 0 0 0.15em #000;
+}
+
+[type="radio"]:focus + span:after {
+  content: '\0020\2190';
+  font-size: 1.5em;
+  line-height: 0.5;
+
+}
+
+.textfield {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #b7b7b7;
+  border-radius: 2px;
+  font: normal medium/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  background: rgba(255,255,255,1);
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66);
+  width: 90%;
+}
+
+.textfield:hover {
+  border: 1px solid #a3a3a3;
+  background: rgba(255,255,255,1);
+  border-color:rgb(222, 27, 27);
+  transition: 0.2s ease all;
+}
+
+.textfield:focus {
+  border: 1px solid rgb(240, 87, 177);
+  border-radius: 0px solid;
+  border-color: rgb(222, 27, 27);
+  outline-color: rgb(222, 27, 27);
+  outline-width: 1px;
+  transition: 0.2s ease all;
+}
+
+
+
+.header {
+	font-weight:normal;
+	color:rgb(0, 0 ,0);
+	letter-spacing:0pt;
+	word-spacing:2pt;
+	font-size:29px;
+	text-align:left;
+	font-family:arial, helvetica, sans-serif;
+	line-height:1;
+	text-align: center;
+}
+
+.subtext {
+	word-spacing:1pt;
+	font-size:12px;
+	text-align:left;
+	font-family:arial, helvetica, sans-serif;
+	line-height:0;
+	text-align: center;
+}
