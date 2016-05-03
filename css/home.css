@@ -80,14 +80,24 @@
 
 .menu_bar_holder {
 	text-align:right;
-	background:rgba(200, 200, 200, 0.4);
-	width:100%;
+	background:rgba(205, 10, 00, 1.0);
+	
 	height:50px;
 	border-bottom: solid rgba(20, 20, 20, 0.2) 2px;
    	vertical-align: middle;
    	margin:0 auto;
    	min-width: 420px;
-   	box-shadow: inset 0px -3px 10px rgba(100,100,100,0.3);
+   	box-shadow: inset 0px -4px 10px rgba(100,100,100,0.5);
+   	padding-left: 8px;
+   	padding-right: 8px;
+   	min-width: 380px%;
+   	max-width:100%;
+   	padding-right: 5px;
+
+   	position: fixed;
+    top: 0;
+    width: 100%;
+
 
 }
 
@@ -100,31 +110,33 @@
 	cursor:pointer;
 	color:rgb(20, 20, 20);
 	font-family:Arial;
-	font-size:16px;
+	font-size:14px;
+	font-weight: normal;
 	padding:10px 22px;
 	text-decoration:none;
 	text-align: center;
 	float:right;
 	height: 100%;
-	-webkit-animation: fadeinx 1.0s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeinx 1.0s; /* Firefox < 16 */
-        -ms-animation: fadeinx 1.0s; /* Internet Explorer */
-         -o-animation: fadeinx 1.0s; /* Opera < 12.1 */
-            animation: fadeinx 1.0s;
+	color: white;
+	font-weight: 100;
+	-webkit-animation: fadeinx 0.4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.4s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.4s; /* Internet Explorer */
+         -o-animation: fadeinx 0.4s; /* Opera < 12.1 */
+            animation: fadeinx 0.4s;
             transition: 0.0s ease all;
 }
 
 .menuButton:hover {
-	border: 1px solid rgba(0, 0, 0, 0.10);
+	border: 1px solid rgba(0, 0, 0, 0.19);
 	box-shadow: 1px 0px 1px rgba(22, 27, 27, 0.2);
-	background: rgba(0,0,0,0.02);
-	border-bottom: rgba(255, 255, 255, 0.9) 2px solid;
+	background: rgba(0,0,0,0.03);
 
-	-webkit-animation: fadeinx 1.0s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeinx 1.0s; /* Firefox < 16 */
-        -ms-animation: fadeinx 1.0s; /* Internet Explorer */
-         -o-animation: fadeinx 1.0s; /* Opera < 12.1 */
-            animation: fadeinx 1.0s;
+	-webkit-animation: fadeinx 0.4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.4s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.4s; /* Internet Explorer */
+         -o-animation: fadeinx 0.4s; /* Opera < 12.1 */
+            animation: fadeinx 0.4s;
             transition: 0.1s ease all;
 }
 
@@ -229,80 +241,49 @@
 }
 
 .closing {
-	background-color: rgba(100, 100, 100, 0.7);
+	background-color: rgba(30, 30, 30, 0.9);
 	width:100%;
-	height:300px;
+	height:150px;
 	clear:both;
 	border-top:solid black thin;
 	margin-left: -5%;
 	padding-left:5%;
 	padding-right:10%;
 
-
+	
 }
 
-.closing_segment_container {
-	height: 80%;
-	display:inline;
-	float:left;
-	padding-top: 5%;
-	padding-left: 5%;
-}
+.closing_inner {
+	padding-top:30px;
+	max-width: 600px;
+	max-width: 300px;
+  	margin: 0 auto;
+  	height:100px;
+  	text-align: center;
 
-.closing_segment {
-	text-align:center;
-	vertical-align: middle;
-	height:20%;
+  	font-size:14px;
+  	color:rgba(255, 255, 255, 0.75);
+  	font-weight: 100;
+	font-family: Verdana,sans-serif;
+	word-spacing:2pt;
 }
 
 .closing_link {
-	font-weight:200;
-	font-color:black;
-	color:black;
-	letter-spacing:0pt;
-	word-spacing:1pt;
-	font-size:17px;
-	text-align:center;
-	font-family:arial, helvetica, sans-serif;
-	text-decoration: none;
-	text-align: left;
-	-webkit-animation: fadeinx 0.5s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeinx 0.5s; /* Firefox < 16 */
-        -ms-animation: fadeinx 0.5s; /* Internet Explorer */
-         -o-animation: fadeinx 0.5s; /* Opera < 12.1 */
-            animation: fadeinx 0.5s;
-            transition: 0.2s ease all;
-}
-
-.closing_link_im {
-	font-weight:200;
-	font-color:black;
-	color:black;
-	letter-spacing:0pt;
-	word-spacing:1pt;
-	font-size:17px;
-	text-align:center;
-	font-family:arial, helvetica, sans-serif;
-	text-decoration: none;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
 	text-align: center;
-
+	width:33.3%;
 }
 
 .closing_link:hover {
-	color:rgb(207, 20, 20);
-	font-weight: 300;
+	text-decoration:none;
+	cursor:pointer;
+	text-shadow:0px 1px 0px #2f6627;
+	text-align: center;
+	width:33.3%;
+	color:rgba(255,255,255,1.0);
 }
 
-.closing_link_im:hover{
-	color:rgb(207, 20, 20);
-	font-weight: 300;
-	-webkit-animation: fadeinx 1.8s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeinx 1.8s; /* Firefox < 16 */
-        -ms-animation: fadeinx 1.8s; /* Internet Explorer */
-         -o-animation: fadeinx 1.8s; /* Opera < 12.1 */
-            animation: fadeinx 1.8s;
-            transition: 0.5s ease all;
-}
 
 
 
