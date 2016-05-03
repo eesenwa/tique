@@ -11,7 +11,6 @@
 <body class="home_bg" style="width:100%">
 <div class="overlay" id='overlay'>
 	<div class='sign_up_prompt' id='sign_up_prompt' style='background-color:rgba(250,250, 250,1.0);'>
-		
 		<div style="width:100%; height:10%; text-align:center;">
 			<a class='close_button' onclick="signUpHide();"><div style='width:20px; height:100%; float:right; padding-top:1%; padding-right: 2%; text-align:center;font-family: "Gill Sans", "Gill Sans MT", sans-serif; font-size: 18px; color: rgba(30, 30, 30, 0.9);'> <span style="color:rgb(130, 130, 130);">x</span> </div></a>
 			<div style='padding-top:2%;'>
@@ -138,49 +137,13 @@
 </div>
 
 <div class="closing">
-	<div class="closing_segment_container" style="width:25%;">
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> About </a>
+	<div class='closing_inner'>
+		<div style='width:100%'>
+			<div ><a class='closing_link'> About</a></div> <p>
+			<div><a class='closing_link'> Privacy</a></div><p>
+			<div><a class='closing_link'> Legal</a></div><p>
 		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> FAQ </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> Contact Us </a>
-		</div>
-		<div class="closing_segment"> 
-			
-		</div>
-	</div>
-
-	<div class="closing_segment_container" style="width:25%;">
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> Privacy </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> Terms of Service </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> Item 3 </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link"> Item 4 </a>
-		</div>
-	</div>
-	<div class="closing_segment_container" style="width:25%;">
-		<div class="closing_segment"> 
-			<a href="" class="closing_link_im"> <img src='src/facebook.png' style="max-width: 25px;"> </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link_im"> <img src='src/twitter.png' style="max-width: 25px;"> </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link_im"> <img src='src/pintrest.png' style="max-width: 25px;"> </a>
-		</div>
-		<div class="closing_segment"> 
-			<a href="" class="closing_link_im"> <img src='src/googleplus.png' style="max-width: 25px;"> </a>
-		</div>
-		
+		<div style='width:100%; font-size:12px;'> <p> &#169; 2016, Tique </p></div>
 	</div>
 </div>
 
