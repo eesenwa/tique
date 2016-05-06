@@ -11,23 +11,22 @@
 <body class="home_bg" style="width:100%">
 <div class="overlay" id='overlay'>
 	<div class='sign_up_prompt' id='sign_up_prompt' style='background-color:rgba(250,250, 250,1.0);'>
-		<div style="width:100%; height:10%; text-align:center;">
-			<a class='close_button' onclick="signUpHide();"><div style='width:20px; height:100%; float:right; padding-top:1%; padding-right: 2%; text-align:center;font-family: "Gill Sans", "Gill Sans MT", sans-serif; font-size: 18px; color: rgba(30, 30, 30, 0.9);'> <span style="color:rgb(130, 130, 130);">x</span> </div></a>
-			<div style='padding-top:2%;'>
-				<span style="color:rgb(180, 40, 40);">Sign in to Tique</span>
-				<hr width='70%'>
+		<div style="width:100%; height:16%; text-align:center; background-color:rgba(210, 20, 20, 0.9);">
+			<a class='close_button' onclick="signUpHide();"><div style='width:20px; height:100%; float:right; padding-top:1%; padding-right: 2%; text-align:center;font-family: "Gill Sans", "Gill Sans MT", sans-serif; font-size: 20px; color: rgba(30, 30, 30, 0.9);'> <span style="color:rgb(250, 250, 250);">x</span> </div></a>
+			<div style='padding-top:3%;'>
+				<span style="color:white; font-size:18px; font-weight:100;">Sign in to Tique</span>
 			</div>
 		</div>
 		<div style='width:100%; height:25%; '>
-			<img src='src/logo.png' style="max-width:30px; padding-top:4%;">
+			<img src='src/logo.png' style="max-width:35px; padding-top:4%;">
 		</div>
 		<div style="width:100%; height:70%; text-align:center;"> 
-			<div style="padding-left:15%; padding-right:15%;">
+			<div style="padding-left:10%; padding-right:10%;">
 				<input class='textfield' placeholder='Email or Phone' name='email' autofocus> 
 				<div style="width:100%; height:5%"></div>
 				<input class='textfield' type='password' placeholder='Password' name='pass'>
 				<div style="width:100%; height:5%"></div>
-				<input type='button' class="myButton" style="width:90%;" onclick="teacherSubmission()" value='Sign in'>
+				<input type='button' class="myButton"  onclick="teacherSubmission()" value='Sign in'>
 			</div>
 		</div>
 	</div>
