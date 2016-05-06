@@ -31,17 +31,17 @@
 		</div>
 	</div>
 </div>
-<div id="container">
 
+<div id="container">
 
 	<div class="home" >
 	<div class="home_header">
 		<div class="menu_bar_holder" >
-				<a href="index.html" class="closing_link_im"><img src='src/logo.png' style="float:left; padding-left: 5px; max-width:50px;"></a>
+				<a href="index.php" class="closing_link_im"><img src='src/logo.png' style="float:left; padding-left: 5px; max-width:50px;"></a>
 				<a onclick="signUpShow();"><div><input type='button' class="menuButton" value='Sign in' name='next'></div></a>
-				<a href="faq.html"><div><input type='button' class="menuButton" value='FAQ'  name='next'></div></a>
-				<a href='about.html'><div><input type='button' class="menuButton" value='About'  name='next'></div></a>
-				<a href="index.html"> <div><input type='button' class="menuButton" value='Home' src='index.html' name='next'></div></a>
+				<a href="faq.php"><div><input type='button' class="menuButton" value='FAQ'  name='next'></div></a>
+				<a href='about.php'><div><input type='button' class="menuButton" value='About'  name='next'></div></a>
+				<a href="index.php"> <div><input type='button' class="menuButton" value='Home' src='index.php' name='next'></div></a>
 		</div>
 		
 		<div class="header_title" style="min-height:70%;">
@@ -53,7 +53,7 @@
 			<div class="headings">
 				<div class="heading1" id="main-header" style="word-wrap: break-word; margin:0 auto; width:85%; ">
 				<span id='title_caption' style="font-size:120%; font-size: 3.5vw; color:black; letter-spacing:2px;"> Discover your pluses and minuses. </span></div>
-				<a href="signup.html">
+				<a href="signup.php">
 				<input type='submit' class="myButton" type='submit' value='Sign Up' name='signup'>
 				</a>
 			</div>
