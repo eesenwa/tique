@@ -14,10 +14,15 @@
 				<a href="index.html"> <div><input type='button' class="menuButton" value='Home' src='index.html' name='next'></div></a>
 </div>
 
+<div style='clear:both; height:40px; width:100%;'></div>
+
 
 <div style="padding:20px;" align="center" id='maindiv'>
 <div class='signupdiv' align="center" id="signupdiv">	
-	<p class="header" style="text-align:center; padding-top: 10px; width:100%;" >Signing up takes seconds</p> 
+	<div style='width:100%; background-color:rgba(230, 20, 20, 0.9); color:white;'>
+		<p class="header" style="text-align:center; text-shadow:0px 1px 0px black; font-size:18px; color:white; padding-top: 10px; padding-bottom:10px; width:100%;" >Signing up takes seconds</p> 
+	</div>
+
 
 	<label for="student" align="left" style="padding-bottom:15px;">
 		    <input type="radio" value="student" name="ts" id="student" onchange="change_forms()" checked> <span>I'm a student</span>
@@ -28,12 +33,12 @@
 		    <input type="radio" value="teacher" name="ts" id="teacher" onchange="change_forms()"> <span>I'm a teacher</span>
 	</label>
 
-	<hr align="left" style="width:90%; border-top: 1px solid rgba(0, 0, 0, 0.3);">
+	
 	<div style="padding-bottom:5px; margin:0 auto;">
 		<span id='error_message' valign="bottom" class='subtext' style="font-size:15px; color:rgb(230, 30, 30);"></span>
 	</div>
 
-	<div id="form_holder" >
+	<div id="form_holder">
 		<form id='signup_student' action="get" name='student' onsubmit="return studentValidation()">
 			<input class='textfield' id='studentEmail' placeholder='Email or Phone' name='email' onkeyup="studentEmailTest()" onfocusout="studentEmailTest(); studentValidation();" autofocus> 
 				<img id='studentEmailValid' src='src/invalid.png' style="visibility:hidden;">
@@ -47,7 +52,7 @@
 			<input class='textfield' id='groupCode' placeholder='Group Code (Optional)' name='group_code' onkeyup="studentGroupCodeTest()" onfocusout="studentGroupCodeTest(); studentValidation();">
 				<img id='groupCodeValid' src='src/invalid.png' style="visibility:hidden;">
 				<br><br>
-			<input type='button' class="myButton" onclick="studentSubmission()" style="width:90%;" value='Join Tique' valign="bottom">
+			<input type='button' class="myButton" onclick="studentSubmission()" value='Join Tique' valign="bottom">
 			<p class='subtext'>By signing up, you agree to our <a href='#'>terms</a> of service.</p>
 		</form>	
 
@@ -68,11 +73,11 @@
 			<input id='pc' type='password' class='textfield' placeholder='Confirm Your Password' name='pass_confirm' onkeyup="teacherPasswordConfirmTest()" onfocusout="teacherPasswordConfirmTest(); teacherValidation();">
 				<img id='passConfValid' src='src/invalid.png' style="visibility:invisible;">
 				<br><br>
-			<input type='button' class="myButton" type='button' style="width:90%;" onclick="teacherSubmission()" value='Join Tique'>
+			<input type='button' class="myButton" type='button' onclick="teacherSubmission()" value='Join Tique'>
 			<p class='subtext'>By signing up, you agree to our <a href='#'>terms</a> of service.</p>
 		</form>	
-
 	</div>
+
 </div>
 
 
