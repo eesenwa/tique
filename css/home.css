@@ -43,10 +43,10 @@
 
 .sign_up_prompt {
 	margin-top: 130px;
-	width: 510px;
+	width: 450px;
 	height: 290px;
-	background:rgba(240, 240, 240, 1.0);
-	border-radius: 10px;
+	background:rgba(250, 250, 250, 1.0);
+	border-radius: 7px;
 	font-size:18px;
 	opacity:1.0;
 	display: inline-block;
@@ -83,20 +83,23 @@
 	background:rgba(205, 10, 00, 1.0);
 	
 	height:50px;
-	border-bottom: solid rgba(20, 20, 20, 0.2) 2px;
    	vertical-align: middle;
    	margin:0 auto;
    	min-width: 420px;
-   	box-shadow: inset 0px -4px 10px rgba(100,100,100,0.5);
    	padding-left: 8px;
    	padding-right: 8px;
    	min-width: 380px%;
    	max-width:100%;
    	padding-right: 5px;
+   	z-index: 3;
 
    	position: fixed;
     top: 0;
     width: 100%;
+
+     -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.9);
+	-moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.9);
+	box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.9);
 
 
 }
