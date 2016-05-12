@@ -2,6 +2,7 @@
 <body>
 	Data submission: <br>
 	<?php  
+		echo "PHP loaded";
 		$con = mysqli_connect('localhost', 'root', '') or die(mysql_error());
 		mysqli_select_db($con, 'user_registration') or die('cannot select DB');
 
@@ -16,10 +17,10 @@
 			$pass = $_POST['s_pass'];
 			$gc = $_POST['group_code'];
 
-			$query = mysqli_query($con, "SELECT * FROM login WHERE user = '".$user."'") or die(mysqli_error($con));
+			$query = mysqli_query($con, "SELECT * FROM User WHERE username = '".$user."'") or die(mysqli_error($con));
 			$numrows = mysqli_num_rows($query);
 			if($numrows == 0) {
-				$sql = "INSERT INTO login (userID, user, password, groupcode) VALUES ('', '$user', '$pass', '$gc')";
+				$sql = "INSERT INTO User (userID, username, password, groupcode) VALUES ('', '$user', '$pass', '$gc')";
 				$result = mysqli_query($con, $sql);
 				if($result) {
 					echo 'Account created! <br>';
@@ -43,10 +44,10 @@
 			$t_email = $_POST['t_email'];
 			$t_password = $_POST['t_password'];
 
-			$query = mysqli_query($con, "SELECT * FROM login WHERE user = '".$user."'") or die(mysqli_error($con));
+			$query = mysqli_query($con, "SELECT * FROM User WHERE user = '".$user."'") or die(mysqli_error($con));
 			$numrows = mysqli_num_rows($query);
 			if($numrows == 0) {
-				$sql = "INSERT INTO login (userID, user, password, groupcode) VALUES ('', '$user', '$pass', '$gc')";
+				$sql = "INSERT INTO User (userID, user, password, groupcode) VALUES ('', '$user', '$pass', '$gc')";
 				$result = mysqli_query($con, $sql);
 				if($result) {
 					echo 'Account created! <br>';
