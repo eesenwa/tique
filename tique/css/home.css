@@ -1,0 +1,389 @@
+/* white pink = rgb(255, 245, 250)
+ * white gray = rgb(250, 250, 250)
+ * light gray = #ECECEC
+ * lighter gray = #FCFCFC
+ * deep pink = rgb(255, 90, 190)
+ *
+ */
+
+ body,html {
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	background: rgba(255,255,255,1.0);
+
+}
+
+.home_bg {
+	background-color:#F7F7F7;
+	min-height: 96%;
+}
+
+.home {
+	background-color: #FFFFFF;
+	background-position: center center;
+	min-height: 96%;
+}
+
+.overlay {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background-color: rgba(0,0,0,0);
+    z-index    : -1;
+    display    : block;
+    text-align: center;
+}
+
+.sign_up_prompt {
+	margin-top: 130px;
+	width: 450px;
+	height: 290px;
+	background:rgba(250, 250, 250, 1.0);
+	border-radius: 7px;
+	font-size:18px;
+	opacity:1.0;
+	display: inline-block;
+	font-family:arial, helvetica, sans-serif;
+	text-align: center;
+
+}
+
+.close_button {
+
+}
+
+.close_button:hover {
+	cursor: pointer;
+}
+
+.about_bg {
+	text-align: center;
+	padding-top:40px;
+	background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(240, 240, 240, 0.6), rgba(255, 255, 255, 0.9)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(240, 240, 240, 0.6), rgba(255, 255, 255, 0.9)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(240, 240, 240, 0.6), rgba(255, 255, 255, 0.9)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(240, 240, 240, 0.6), rgba(255, 255, 255, 0.9)); /* Standard syntax */
+}
+
+.logo {
+	padding: 50px;
+}
+
+
+.menu_bar_holder {
+	text-align:right;
+	background:rgba(205, 10, 00, 1.0);
+	
+	height:50px;
+   	vertical-align: middle;
+   	margin:0 auto;
+   	min-width: 420px;
+   	padding-left: 8px;
+   	padding-right: 8px;
+   	min-width: 380px%;
+   	max-width:100%;
+   	padding-right: 5px;
+   	z-index: 3;
+
+   	position: fixed;
+    top: 0;
+    width: 100%;
+
+     -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.9);
+	-moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.9);
+	box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.9);
+
+
+}
+
+
+
+.menuButton {
+	background-color:rgba(255, 97, 187, 0);
+	border:1px solid rgba(240, 87, 177, 0.0);
+	display:inline-block;
+	cursor:pointer;
+	color:rgb(20, 20, 20);
+	font-family:Arial;
+	font-size:14px;
+	font-weight: normal;
+	padding:10px 22px;
+	text-decoration:none;
+	text-align: center;
+	float:right;
+	height: 100%;
+	color: white;
+	font-weight: 100;
+	-webkit-animation: fadeinx 0.4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.4s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.4s; /* Internet Explorer */
+         -o-animation: fadeinx 0.4s; /* Opera < 12.1 */
+            animation: fadeinx 0.4s;
+            transition: 0.0s ease all;
+}
+
+.menuButton:hover {
+	border: 1px solid rgba(0, 0, 0, 0.19);
+	box-shadow: 1px 0px 1px rgba(22, 27, 27, 0.2);
+	background: rgba(0,0,0,0.03);
+
+	-webkit-animation: fadeinx 0.4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.4s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.4s; /* Internet Explorer */
+         -o-animation: fadeinx 0.4s; /* Opera < 12.1 */
+            animation: fadeinx 0.4s;
+            transition: 0.1s ease all;
+}
+
+.menuButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+.header_title {
+	text-align: center;
+	padding-top:50px;
+}
+
+.headings {
+	text-align: center;
+}
+
+.heading1 {
+	font-weight:normal;
+	color:rgb(20, 20 ,20);
+	letter-spacing:0pt;
+	word-spacing:2pt;
+	font-size: 3.2vw;
+	font-family:arial, helvetica, sans-serif;
+	text-align: center;
+	word-wrap: break-word; 
+	padding-bottom:70px;
+	 -webkit-animation: fadein 3.0s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3.0s; /* Firefox < 16 */
+        -ms-animation: fadein 3.0s; /* Internet Explorer */
+         -o-animation: fadein 3.0s; /* Opera < 12.1 */
+            animation: fadein 3.0s;
+}
+
+
+
+.heading2 {
+	font-weight:10;
+	color:rgba(24, 24 ,24, 0.85);
+	letter-spacing:2pt;
+	word-spacing:1pt;
+	font-size:20px;
+	font-family:arial, helvetica, sans-serif;
+	line-height:0;
+	text-align: center;
+}
+
+.heading3 {
+	font-size:30px; 
+	font-weight:bold;
+	color:rgba(20, 20 ,20, 0.9);
+	word-spacing:1pt;
+	font-size:20px;
+	font-family:arial, helvetica, sans-serif;
+}
+
+.heading4 {
+	padding-left:5%; 
+	padding-right:5%;
+	color:rgba(0,0,0,0.7);
+}
+
+
+
+.infographic {
+	display: block;
+	font-weight:normal;
+	letter-spacing:0pt;
+	word-spacing:2pt;
+	font-size:15px;
+	max-height: 100%;
+	font-family:arial, helvetica, sans-serif;
+}
+
+
+.segment {
+	background-color: rgba(0,0,0,0.0);
+	float: left;
+	width:33.3%;
+	text-align: center;
+}
+
+
+.bullet_list {
+	float:left;
+	width:100%;
+	text-align: left;
+	word-spacing:2pt;
+	font-size:25px;
+	font-family:arial, helvetica, sans-serif;
+	
+}
+
+.bullet {
+	min-width: 100%;
+	font-weight:normal;
+	letter-spacing:0pt;
+	word-spacing:2pt;
+	font-size:25px;
+	font-family:arial, helvetica, sans-serif;
+}
+
+.closing {
+	background-color: rgba(30, 30, 30, 0.9);
+	width:100%;
+	height:150px;
+	clear:both;
+	border-top:solid black thin;
+	margin-left: -5%;
+	padding-left:5%;
+	padding-right:10%;
+
+	
+}
+
+.closing_inner {
+	padding-top:30px;
+	max-width: 600px;
+	max-width: 300px;
+  	margin: 0 auto;
+  	height:100px;
+  	text-align: center;
+
+  	font-size:14px;
+  	color:rgba(255, 255, 255, 0.75);
+  	font-weight: 100;
+	font-family: Verdana,sans-serif;
+	word-spacing:2pt;
+}
+
+.closing_link {
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	text-align: center;
+	width:33.3%;
+}
+
+.closing_link:hover {
+	text-decoration:none;
+	cursor:pointer;
+	text-shadow:0px 1px 0px #2f6627;
+	text-align: center;
+	width:33.3%;
+	color:rgba(255,255,255,1.0);
+}
+
+
+
+
+
+
+.myButton {
+	background-color:rgb(222, 27, 27);
+	border-radius:4px;
+	border:2px solid rgb(202, 00, 00);
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	padding:19px 72px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+	text-align: center;
+}
+
+.myButton:hover {
+	background-color:rgb(230, 45, 45);
+	border:2px solid rgb(212, 10, 10);
+}
+
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+@keyframes fadeinx {
+    from { opacity: 0.7; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
