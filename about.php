@@ -1,89 +1,256 @@
-<html>
-<head>
-<link rel="icon" href="src/logo.png">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+body,html {
+	margin:0;
+	padding:0;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+    font-family:Arial;
+}
 
-<link rel="stylesheet" type="text/css" href="css/about.css">
 
-<title> Tique</title>
-</head>
+h1 {
+    text-align: left;
+    font-size: 2em;
+    font-weight: 500;
+}
 
-<body class="home_bg" style="width:100%">
+p {
+    text-indent: 7%;
+    color: rgba(0,0,0,.80);
+}
 
-<div class="overlay" id='overlay'>
-	<div class='sign_up_prompt' id='sign_up_prompt' style='background-color:rgba(250,250, 250,1.0);'>
-		<div style="width:100%; height:16%; text-align:center; background-color:rgba(210, 20, 20, 0.9);">
-			<a class='close_button' onclick="signUpHide();"><div style='width:20px; height:100%; float:right; padding-top:1%; padding-right: 2%; text-align:center;font-family: "Gill Sans", "Gill Sans MT", sans-serif; font-size: 20px; color: rgba(30, 30, 30, 0.9);'> <span style="color:rgb(250, 250, 250);">x</span> </div></a>
-			<div style='padding-top:3%;'>
-				<span style="color:white; font-size:18px; font-weight:100;">Sign in to Tique</span>
-			</div>
-		</div>
-		<div style='width:100%; height:25%; '>
-			<img src='src/logo.png' style="max-width:35px; padding-top:4%;">
-		</div>
-		<div style="width:100%; height:70%; text-align:center;"> 
-			<div style="padding-left:10%; padding-right:10%;">
-				<input class='textfield' placeholder='Email or Phone' name='email' autofocus> 
-				<div style="width:100%; height:5%"></div>
-				<input class='textfield' type='password' placeholder='Password' name='pass'>
-				<div style="width:100%; height:5%"></div>
-				<input type='button' class="myButton"  onclick="teacherSubmission()" value='Sign in'>
-			</div>
-		</div>
-	</div>
-</div>
 
-<div id="container">
-	<div>
-		<div class="menu_bar_holder" >
-				<a href="index.php" class="closing_link_im"><img src='src/logo.png' style="padding-left:5px; float:left; max-width:50px;"></a>
-				<a onclick="signUpShow();"><div><input type='button' class="menuButton" value='Sign in' name='next'></div></a>
-				<a href="faq.php"><div><input type='button' class="menuButton" value='FAQ'  name='next'></div></a>
-				<a href='about.php'><div><input type='button' class="menuButton" value='About'  name='next'></div></a>
-				<a href="index.php"> <div><input type='button' class="menuButton" value='Home' src='index.php' name='next'></div></a>
-		</div>
-		<div style='height:60px; width:100%'></div>
-		<div class="about_bg" style="min-height:70%; min-width:300px; ">
 
-				<div class="heading1" id="main-header" style="word-wrap: break-word; margin:0 auto; width:90%; ">
+.logo {
+    padding: 50px;
+}
 
-					<div style="width:100%; margin:0 auto; max-width:900px; min-height:90%; background: white; border-radius:6px; padding:2.5%; ">
-					<div style='float: center;margin 0 auto; text-align:center;'>
-						<img style="width:40%; max-width:300px" src="src/tique_text_2.png">
-						<hr width="50%">
-					</div>
-						<h1> What is Tique? </h1>
-						<div style='width:100%; text-align: left;'>
-							<p>How can I get better? It's a simple question that drives us and drives everyone who uses our app. What we've found is that it can be answered by knowing two simple things: what am I doing well and what am I doing not so well. But trying to evaluate accurately is nearly impossible; we tend not be honest with ourselves. When you ask feedback from friends and family also tends not be useful because they do not want to hurt your feelings. When feedback is given anonymously, it used as an opportunity of vengeance or ones true voice is hushed by the preformulated questions that ask you to rate them on a numerical scale.</p>
-							
-							<p>Tique offers a simple solution. Your students, your friends, anyone (who you've given your code to) can anonymously give you genuine feedback through two buttons- plus and minus. Discover yours today.</p>
-						</div>
-					</div>
-				</div>
-		</div>
-	</div>
-</div>
 
-<script  type="text/javascript">
+.menu_bar_holder {
+    text-align:right;
+    background:rgba(205, 10, 00, 1.0);
+    
+    height:50px;
+    border-bottom: solid rgba(20, 20, 20, 0.2) 2px;
+    vertical-align: middle;
+    margin:0 auto;
+    min-width: 420px;
+    box-shadow: inset 0px -4px 10px rgba(100,100,100,0.5);
+    padding-left: 8px;
+    padding-right: 8px;
+    min-width: 380px%;
+    max-width:100%;
+    padding-right: 5px;
 
-	function signUpShow() {
-		document.getElementById('overlay').style.backgroundColor = 'rgba(0,0,0,0.8)';
-		document.getElementById('overlay').style.zIndex = '1';
-		document.getElementById('overlay').display = 'block';
+    position: fixed;
+    top: 0;
+    width: 100%;
 
-		document.getElementById('sign_up_prompt').display = 'block';
-	}
 
-	
+}
 
-	function signUpHide() {
-		document.getElementById('overlay').style.backgroundColor = 'rgba(0,0,0,0.0)';
-		document.getElementById('overlay').style.zIndex = '-1';
-		document.getElementById('overlay').display = 'none';
-		document.getElementById('sign_up_prompt').display = 'none';
-		document.getElementById('sign_up_prompt').style.zIndex = '-10';
-	}
-	
-</script>
-</body>
-</html>
+
+.overlay {
+    position   : absolute;
+    top        : 0;
+    left       : 0;
+    width      : 100%;
+    height     : 100%;
+    background-color: rgba(0,0,0,0);
+    z-index    : -1;
+    display    : block;
+    text-align: center;
+}
+
+.sign_up_prompt {
+    margin-top: 130px;
+    width: 450px;
+    height: 290px;
+    background:rgba(250, 250, 250, 1.0);
+    border-radius: 7px;
+    font-size:18px;
+    opacity:1.0;
+    display: inline-block;
+    font-family:arial, helvetica, sans-serif;
+    text-align: center;
+
+}
+
+.close_button {
+
+}
+
+.close_button:hover {
+    cursor: pointer;
+}
+
+
+
+.menuButton {
+    background-color:rgba(255, 97, 187, 0);
+    border:1px solid rgba(240, 87, 177, 0.0);
+    display:inline-block;
+    cursor:pointer;
+    color:rgb(20, 20, 20);
+    font-family:Arial;
+    font-size:14px;
+    font-weight: normal;
+    padding:10px 22px;
+    text-decoration:none;
+    text-align: center;
+    float:right;
+    height: 100%;
+    color: white;
+    font-weight: 100;
+    -webkit-animation: fadeinx 0.4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.4s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.4s; /* Internet Explorer */
+         -o-animation: fadeinx 0.4s; /* Opera < 12.1 */
+            animation: fadeinx 0.4s;
+            transition: 0.0s ease all;
+}
+
+.menuButton:hover {
+    border: 1px solid rgba(0, 0, 0, 0.19);
+    box-shadow: 1px 0px 1px rgba(22, 27, 27, 0.2);
+    background: rgba(0,0,0,0.03);
+
+    -webkit-animation: fadeinx 0.4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinx 0.4s; /* Firefox < 16 */
+        -ms-animation: fadeinx 0.4s; /* Internet Explorer */
+         -o-animation: fadeinx 0.4s; /* Opera < 12.1 */
+            animation: fadeinx 0.4s;
+            transition: 0.1s ease all;
+}
+
+.menuButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+.textfield {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 1px solid #b7b7b7;
+  border-radius: 2px;
+  font: normal medium/normal Arial, Helvetica, sans-serif;
+  color: rgba(0,0,0,1);
+  background: rgba(255,255,255,1);
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.2) inset;
+  text-shadow: 1px 1px 0 rgba(255,255,255,0.66);
+  width: 90%;
+}
+
+.textfield:hover {
+  border: 1px solid #a3a3a3;
+  background: rgba(255,255,255,1);
+  border-color:rgb(222, 27, 27);
+  transition: 0.2s ease all;
+}
+
+.textfield:focus {
+  border: 1px solid rgb(240, 87, 177);
+  border-radius: 0px solid;
+  border-color: rgb(222, 27, 27);
+  outline-color: rgb(222, 27, 27);
+  outline-width: 1px;
+  transition: 0.2s ease all;
+}
+
+
+.myButton {
+    background-color:rgb(222, 27, 27);
+    border-radius:4px;
+    border:2px solid rgb(202, 00, 00);
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:16px;
+    padding:19px 72px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #2f6627;
+    text-align: center;
+}
+
+.myButton:hover {
+    background-color:rgb(230, 45, 45);
+    border:2px solid rgb(212, 10, 10);
+}
+
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+
+
+
+
+
+@keyframes fadeinx {
+    from { opacity: 0.7; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinx {
+    from { opacity: 0.1; }
+    to   { opacity: 1; }
+}
+
+
+
