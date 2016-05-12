@@ -4,7 +4,10 @@
 	<?php  
 		echo "PHP loaded";
 		$con = mysqli_connect('localhost', 'root', '') or die(mysql_error());
+		echo "PHP 1<br>";
 		mysqli_select_db($con, 'user_registration') or die('cannot select DB');
+
+		echo "PHP 1";
 
 		if(!empty($_POST['s_email'])) {
 			//Student account
