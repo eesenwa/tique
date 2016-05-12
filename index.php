@@ -9,6 +9,8 @@
 </head>
 
 <body class="home_bg" style="width:100%">
+
+
 <div class="overlay" id='overlay'>
 	<div class='sign_up_prompt' id='sign_up_prompt' style='background-color:rgba(250,250, 250,1.0);'>
 		<div style="width:100%; height:16%; text-align:center; background-color:rgba(210, 20, 20, 0.9);">
@@ -22,6 +24,7 @@
 		</div>
 		<div style="width:100%; height:70%; text-align:center;"> 
 			<div style="padding-left:10%; padding-right:10%;">
+
 				<input class='textfield' placeholder='Email or Phone' name='email' autofocus> 
 				<div style="width:100%; height:5%"></div>
 				<input class='textfield' type='password' placeholder='Password' name='pass'>
